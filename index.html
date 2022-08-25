@@ -10,6 +10,11 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
 </head>
 <body>
   <div id="app">加载中</div>
@@ -39,24 +44,13 @@
         hideOtherSidebarContent: false,
         namespace: 'website-1',
         pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
-      }
+      },
+      waline: {
+        serverURL: "https://messages.lylelove.top/",
+        pageview: true,
+      },
     }
 
-  </script>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
-
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-  <script>
-    const gitalk = new Gitalk({
-      clientID: 'f90977b733876f692541',
-      clientSecret: 'a6ea27e8e99f3ff54d020e66fb36d9949e6367ea',
-      repo: 'docs',
-      owner: 'lylelove',
-      admin: ['lylelove'],
-      // facebook-like distraction free mode
-      distractionFreeMode: false
-    })
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
