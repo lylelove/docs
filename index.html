@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 </head>
@@ -15,6 +17,13 @@
     window.$docsify = {
       name: '',
       repo: '',
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+
       search: {
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
         paths: [], // or 'auto'
@@ -44,7 +53,7 @@
       clientSecret: 'a6ea27e8e99f3ff54d020e66fb36d9949e6367ea',
       repo: 'docs',
       owner: 'lylelove',
-      admin: ['Github repo collaborators, only these guys can initialize github issues'],
+      admin: ['lylelove'],
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
